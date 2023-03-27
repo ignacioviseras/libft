@@ -6,7 +6,7 @@
 #    By: igvisera <igvisera@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/01 04:21:55 by igvisera          #+#    #+#              #
-#    Updated: 2022/09/21 16:18:17 by igvisera         ###   ########.fr        #
+#    Updated: 2023/03/27 16:32:55 by igvisera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,8 @@ SRCS	=	ft_strlen.c \
 			ft_strncmp.c \
 			ft_strlcat.c \
 			ft_strlcpy.c \
-			ft_strnstr.c
+			ft_strnstr.c \
+			ft_strchr.c 
 
 $(NAME):
 	gcc $(FLAGS) -c $(SRCS) -I./
