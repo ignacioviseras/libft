@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: igvisera <igvisera@student.42madrid.com>   +#+  +:+       +#+         #
+#    By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/04/01 04:21:55 by igvisera          #+#    #+#              #
-#    Updated: 2023/03/27 16:32:55 by igvisera         ###   ########.fr        #
+#    Created: 2023/09/24 18:28:35 by igvisera          #+#    #+#              #
+#    Updated: 2023/09/27 18:34:14 by igvisera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,11 @@ SRCS	=	ft_strlen.c \
 			ft_strlcat.c \
 			ft_strlcpy.c \
 			ft_strnstr.c \
-			ft_strchr.c 
+			ft_strchr.c \
+			ft_memmove.c \
+			ft_memcpy.c \
+			ft_memchr.c \
+			ft_memcmp.c
 
 $(NAME):
 	gcc $(FLAGS) -c $(SRCS) -I./
