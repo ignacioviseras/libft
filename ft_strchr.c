@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 23:06:04 by igvisera          #+#    #+#             */
-/*   Updated: 2023/09/29 21:31:27 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/01 15:43:35 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + index);
 	return (NULL);
 }
+
 // int	main(void)
 // {
 // 	char s[] = "tripouille";

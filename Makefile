@@ -6,7 +6,7 @@
 #    By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/24 18:28:35 by igvisera          #+#    #+#              #
-#    Updated: 2023/09/27 18:34:14 by igvisera         ###   ########.fr        #
+#    Updated: 2023/10/05 20:38:32 by igvisera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,13 +36,24 @@ SRCS	=	ft_strlen.c \
 			ft_memmove.c \
 			ft_memcpy.c \
 			ft_memchr.c \
-			ft_memcmp.c
+			ft_memcmp.c \
+			ft_strdup.c \
+			ft_strrchr.c \
+			ft_substr.c \
+			ft_strjoin.c \
+			ft_putchar_fd.c \
+			ft_putstr_fd.c \
+			ft_putendl_fd.c \
 
-$(NAME):
-	gcc $(FLAGS) -c $(SRCS) -I./
-	ar rcs $(NAME) $(OBJS)
+
+%.o: %.c 
+	gcc $(FLAGS) -c $^ -o $@ 
 
 all: $(NAME)
+
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
+
 
 bonus: $(NAME)
 
