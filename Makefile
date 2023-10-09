@@ -6,7 +6,7 @@
 #    By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/24 18:28:35 by igvisera          #+#    #+#              #
-#    Updated: 2023/10/05 20:38:32 by igvisera         ###   ########.fr        #
+#    Updated: 2023/10/09 19:20:38 by igvisera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,6 +41,10 @@ SRCS	=	ft_strlen.c \
 			ft_strrchr.c \
 			ft_substr.c \
 			ft_strjoin.c \
+			ft_strtrim.c \
+			ft_striteri.c \
+			ft_itoa.c \
+			ft_strmapi.c \
 			ft_putchar_fd.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
