@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 23:06:04 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/01 15:43:35 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/14 20:59:45 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ char	*ft_strchr(const char *s, int c)
 	index = 0;
 	while (s[index] != '\0')
 	{
-		if (s[index] == (char)c)
+		if (s[index] == (unsigned char)c)
 			return ((char *)s + index);
 		index++;
 	}
-	if (c == '\0')
-		return ((char *)s + index);
+	if ((unsigned char)c == '\0')
+		return ((char *)&s[ft_strlen(s)]);
 	return (NULL);
 }
 

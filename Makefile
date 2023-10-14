@@ -6,7 +6,7 @@
 #    By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/24 18:28:35 by igvisera          #+#    #+#              #
-#    Updated: 2023/10/09 19:20:38 by igvisera         ###   ########.fr        #
+#    Updated: 2023/10/14 20:53:48 by igvisera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,10 +45,19 @@ SRCS	=	ft_strlen.c \
 			ft_striteri.c \
 			ft_itoa.c \
 			ft_strmapi.c \
+			ft_putnbr_fd.c \
 			ft_putchar_fd.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
-
+			ft_lstnew.c \
+			ft_lstadd_front.c \
+			ft_lstsize.c \
+			ft_lstlast.c \
+			ft_lstadd_back.c \
+			ft_lstdelone.c \
+			ft_lstclear.c \
+			ft_lstiter.c \
+			ft_lstmap.c
 
 %.o: %.c 
 	gcc $(FLAGS) -c $^ -o $@ 

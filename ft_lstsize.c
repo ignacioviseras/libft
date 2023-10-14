@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 03:11:25 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/14 03:41:51 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/14 20:05:40 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int index;
+	int	index;
 
 	index = 0;
 	if (!lst)

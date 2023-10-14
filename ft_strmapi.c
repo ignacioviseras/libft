@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 18:41:10 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/09 19:17:43 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/14 19:34:32 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,17 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t  index;
-    char    *str;
+	size_t	index;
+	char	*str;
 
 	index = 0;
-
-    str = (char *)ft_calloc(sizeof(char), ft_strlen(s) + 1);
-    if (!str)
-        return (NULL);
+	str = (char *)ft_calloc(ft_strlen(s) + 1, sizeof(char));
+	if (!str)
+		return (NULL);
 	while (s[index] != '\0')
 	{
 		str[index] = f(index, s[index]);
 		index++;
 	}
-    return (str);
-
+	return (str);
 }

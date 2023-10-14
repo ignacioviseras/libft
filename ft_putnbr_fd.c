@@ -6,13 +6,13 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 17:09:37 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/01 17:17:03 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/14 20:52:35 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{
@@ -28,8 +28,8 @@ void ft_putnbr_fd(int n, int fd)
 	{
 		if (n > 9)
 		{
-			ft_putnbr(n / 10);
-            ft_putchar_fd((n % 10) + '0', fd);
+			ft_putnbr_fd((n / 10), fd);
+			ft_putchar_fd((n % 10) + '0', fd);
 		}
 		else
 		{

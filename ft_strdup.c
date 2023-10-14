@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 11:55:13 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/01 13:49:02 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/14 20:58:01 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strdup(const char *s)
 	char	*ptr;
 	size_t	len;
 
-	if (!s)
-		return (NULL);
 	len = ft_strlen((char *)s);
 	ptr = (char *)malloc(sizeof(char) * len + 1);
 	if (!ptr)
