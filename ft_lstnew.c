@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 00:27:59 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/14 01:11:59 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/19 20:18:11 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,3 @@ t_list	*ft_lstnew(void *content)
 	nodo->next = NULL;
 	return (nodo);
 }
-
-// int main()
-// {
-
-// }

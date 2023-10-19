@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:42:36 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/14 20:07:53 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/19 20:17:37 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int	sizenum(int num)
+static int	sizenum(int num)
 {
 	size_t	size;
 
@@ -59,14 +59,3 @@ char	*ft_itoa(int n)
 	}
 	return (num);
 }
-
-/*
-int	main(void)
-{
-	int	a;
-
-	a = 8124;
-	printf("%s\n", ft_itoa(-1234));
-	return (0);
-}
-*/

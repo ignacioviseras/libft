@@ -3,18 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igvisera <igvisera@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 21:55:15 by igvisera          #+#    #+#             */
-/*   Updated: 2022/09/28 22:15:03 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/19 20:19:37 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*si le se pone asi peta 
-char	*ft_strnstr(const char	*big, const char *little, size_t len);
-tiene q estar de esa manera*/
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -36,8 +32,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-/*		
-mirar codigo esta opcion
-	while ((big[i + j] == little[j]) && (big[i + j] != '\0') && (len > i
-					+ j))
-*/

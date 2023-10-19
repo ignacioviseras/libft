@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 20:27:51 by igvisera          #+#    #+#             */
-/*   Updated: 2023/09/29 19:21:37 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/19 20:18:22 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,3 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	}
 	return (0);
 }
-
-// int main()
-// {
-//     printf("%s\n", ft_memcmp("qwe", "awd", 4));
-// }

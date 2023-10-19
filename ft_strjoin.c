@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 20:19:58 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/14 11:38:55 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/19 20:19:19 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(c1, s2, len_max);
 	return (c1);
 }
-
-// int main()
-// {
-//   char const *str = "i just want this part #############";
-//   char const *str2 = "qqqqqqq";
-//   // ft_strjoin(str, str2);
-//   printf("asd:%s\n", ft_strjoin(str, str2));
-//   return (0);
-// }
