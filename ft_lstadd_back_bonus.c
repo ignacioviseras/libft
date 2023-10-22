@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 17:28:17 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/20 17:48:55 by igvisera         ###   ########.fr       */
+/*   Created: 2023/10/14 04:15:55 by igvisera          #+#    #+#             */
+/*   Updated: 2023/10/14 20:28:18 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	index;
-	char	*msrc;
-	char	*mdest;
+	t_list	*iter;
 
-	index = 0;
-	msrc = ((char *)src);
-	mdest = ((char *)dest);
-	if (n == 0)
-		return (mdest);
-	if (dest > src && src + n > dest)
+	if (lst)
 	{
-		while (n--)
+		if (*lst)
 		{
-			mdest[n] = msrc[n];
+			iter = *lst;
+			while (iter->next != NULL)
+			{
+				iter = iter->next;
+			}
+			iter->next = new;
+		}
+		else
+		{
+			*lst = new;
 		}
 	}
-	else
-	{
-		ft_memcpy(mdest, msrc, n);
-	}
-	return (mdest);
 }

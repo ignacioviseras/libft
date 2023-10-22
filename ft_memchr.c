@@ -6,11 +6,11 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 18:25:14 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/19 20:18:17 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:48:42 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {

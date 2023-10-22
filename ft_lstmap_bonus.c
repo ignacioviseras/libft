@@ -1,38 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 17:28:17 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/20 17:48:55 by igvisera         ###   ########.fr       */
+/*   Created: 2023/10/14 17:38:22 by igvisera          #+#    #+#             */
+/*   Updated: 2023/10/14 20:05:59 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t	index;
-	char	*msrc;
-	char	*mdest;
+	t_list	*aux;
+	t_list	*ldst;
+	void	*res;
 
-	index = 0;
-	msrc = ((char *)src);
-	mdest = ((char *)dest);
-	if (n == 0)
-		return (mdest);
-	if (dest > src && src + n > dest)
+	if (!lst)
+		return (NULL);
+	ldst = NULL;
+	while (lst)
 	{
-		while (n--)
+		res = f(lst->content);
+		aux = ft_lstnew(res);
+		if (!aux)
 		{
-			mdest[n] = msrc[n];
+			ft_lstclear(&ldst, del);
+			del(res);
+			return (NULL);
 		}
+		ft_lstadd_back(&ldst, aux);
+		lst = lst->next;
 	}
-	else
-	{
-		ft_memcpy(mdest, msrc, n);
-	}
-	return (mdest);
+	return (ldst);
 }

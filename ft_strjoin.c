@@ -6,13 +6,11 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 20:19:58 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/19 20:19:19 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:49:39 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

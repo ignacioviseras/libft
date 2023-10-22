@@ -6,18 +6,19 @@
 #    By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/24 18:28:35 by igvisera          #+#    #+#              #
-#    Updated: 2023/10/17 19:57:00 by igvisera         ###   ########.fr        #
+#    Updated: 2023/10/22 02:39:59 by igvisera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
+BONUS_N	=	.bonus
 
 OBJS	=	${SRCS:.c=.o}
 
 OBJS_BONUS	=	${BONUS:.c=.o}
 
 
-FLAGS		= -Wall -Wextra -Werror #-g3 -fsanitize=address
+CFLAGS		= -Wall -Wextra -Werror
 
 SRCS	=	ft_strlen.c \
 			ft_isdigit.c \
@@ -54,35 +55,33 @@ SRCS	=	ft_strlen.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
 
-BONUS = 	ft_lstnew.c \
-			ft_lstadd_front.c \
-			ft_lstsize.c \
-			ft_lstlast.c \
-			ft_lstadd_back.c \
-			ft_lstdelone.c \
-			ft_lstclear.c \
-			ft_lstiter.c \
-			ft_lstmap.c
-
-
-%.o: %.c 
-	gcc $(FLAGS) -c $^ -o $@ 
+BONUS = 	ft_lstnew_bonus.c \
+			ft_lstadd_front_bonus.c \
+			ft_lstsize_bonus.c \
+			ft_lstlast_bonus.c \
+			ft_lstadd_back_bonus.c \
+			ft_lstdelone_bonus.c \
+			ft_lstclear_bonus.c \
+			ft_lstiter_bonus.c \
+			ft_lstmap_bonus.c
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
+$(BONUS_N): $(OBJS) $(OBJS_BONUS)
+	ar rcs $(BONUS_N) $(OBJS) $(OBJS_BONUS)
+	ar rcs $(NAME) $(OBJS) $(OBJS_BONUS)
 
-bonus: $(OBJS_BONUS)
-	ar rcs $(NAME) $(OBJS_BONUS)
+bonus: $(BONUS_N)
 
 clean:
 	rm -f $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
-	rm -f $(NAME) 
+	rm -f $(NAME) $(BONUS_N)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus

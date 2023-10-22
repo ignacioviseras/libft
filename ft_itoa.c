@@ -6,13 +6,11 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:42:36 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/19 20:17:37 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:46:36 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 static int	sizenum(int num)
 {

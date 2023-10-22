@@ -6,7 +6,7 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/24 18:29:02 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/17 17:52:09 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:47:27 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
+# include <string.h>
+# include <stdint.h>
 
 typedef struct s_list
 {

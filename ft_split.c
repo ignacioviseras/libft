@@ -6,12 +6,11 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 23:39:00 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/19 20:17:01 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:49:13 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	n_words(char const *s, char c)
 {

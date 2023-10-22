@@ -6,12 +6,11 @@
 /*   By: igvisera <igvisera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 20:27:51 by igvisera          #+#    #+#             */
-/*   Updated: 2023/10/19 20:18:22 by igvisera         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:48:48 by igvisera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
